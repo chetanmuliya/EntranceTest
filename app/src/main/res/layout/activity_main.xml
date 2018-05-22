@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_gravity="end"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:auto="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context="com.example.chetanmuliya.entrancetest.activity.MainActivity">
+        <include layout="@layout/appbar"/>
+        <ScrollView
+            android:id="@+id/scrollview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <io.github.kexanie.library.MathView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    auto:engine="KaTeX">
+                </io.github.kexanie.library.MathView>
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:background="@drawable/testunedesignlogo_0000_t"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:onClick="optionSelected"
+                        android:background="@drawable/backgroundbuttoncolor"
+                        android:orientation="vertical">
+                        <io.github.kexanie.library.MathView
+                            android:id="@+id/choice_1"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            auto:engine="KaTeX">
+                        </io.github.kexanie.library.MathView>
+                        <ImageView
+                            android:id="@+id/figure1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:src="@drawable/test_31_141" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:onClick="optionSelected"
+                        android:padding="10dp"
+                        android:background="@drawable/backgroundbuttoncolor"
+                        android:orientation="vertical">
+                        <io.github.kexanie.library.MathView
+                            android:id="@+id/choice_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            auto:engine="KaTeX">
+                        </io.github.kexanie.library.MathView>
+                        <ImageView
+                            android:id="@+id/figure2"
+                            android:layout_width="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/test_31_141" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:onClick="optionSelected"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/backgroundbuttoncolor"
+                        android:orientation="vertical">
+                        <io.github.kexanie.library.MathView
+                            android:id="@+id/choice_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            auto:engine="KaTeX">
+                        </io.github.kexanie.library.MathView>
+                        <ImageView
+                            android:id="@+id/figure3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:src="@drawable/test_31_141" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/backgroundbuttoncolor"
+                        android:layout_marginTop="10dp"
+                        android:onClick="optionSelected"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <io.github.kexanie.library.MathView
+                            android:id="@+id/choice_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            auto:engine="KaTeX">
+                        </io.github.kexanie.library.MathView>
+                        <ImageView
+                            android:id="@+id/figure4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:src="@drawable/test_31_141" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="10">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:text="Submit Test"
+                        android:onClick="submitTest"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/option_background"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:text="Skip"
+                        android:onClick="skipQuestion"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/option_background"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scrollview"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/nav_header_all_question" />
+
+                <include layout="@layout/recyclerview" />
+
+                <include layout="@layout/view_status" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
