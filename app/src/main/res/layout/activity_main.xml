@@ -26,7 +26,6 @@
                 android:orientation="vertical">
                 <io.github.kexanie.library.MathView
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="40dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:id="@+id/question"
@@ -44,6 +43,7 @@
                     android:background="@drawable/testunedesignlogo_0000_t"/>
 
                     <LinearLayout
+                        android:id="@+id/option1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -71,6 +71,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/option2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -99,6 +100,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/option3"
                         android:layout_width="match_parent"
                         android:padding="10dp"
                         android:layout_marginTop="10dp"
@@ -126,6 +128,7 @@
                             android:src="@drawable/test_31_141" />
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/option4"
                         android:layout_width="match_parent"
                         android:padding="10dp"
                         android:layout_marginStart="5dp"
@@ -176,7 +179,17 @@
                         android:layout_margin="6dp"
                         android:background="@drawable/option_background"
                         />
+
                 </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/savenext"
+                    android:onClick="saveNext"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/option_background"
+                    />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

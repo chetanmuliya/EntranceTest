@@ -59,7 +59,6 @@ public class Dashboard extends AppCompatActivity {
         Intent intent = new Intent(Dashboard.this,
                 MainActivity.class);
         startActivity(intent);
-        finish();
     }
 
     public void signOut(View view) {

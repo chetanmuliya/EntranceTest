@@ -33,4 +33,12 @@ public class SessionManager {
     public boolean isLoggedIn(){
         return pref.getBoolean(KEY_IS_LOGGEDIN,false);
     }
+
+    public void setAnsweredOptionC(int questionNo,int option){
+        editor.putInt(""+questionNo,option);
+        editor.commit();
+    }
+    public int getSelectedOption(int qn){
+        return pref.getInt(""+ qn,0);
+    }
 }
